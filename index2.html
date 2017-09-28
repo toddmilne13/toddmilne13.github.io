@@ -1,13 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Dirt Bike Shop</title>
-<img src="toddmilne13.github.io/Bikes.png" height="200">
+<title>Dirt Bikes</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+
+.column.side {
+    width: 25%;
+}
+
+
+.column.middle {
+    width: 50%;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+</style>
 </head>
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<div class="header">
+  <h1>All about Dirt Bikes</h1>
+  <p>Welcome to my web page all about Dirt Bikes!</p>
+</div>
 
+<div class="topnav">
+  <a href="">My Info</a>
+  <a href="">Bike Types</a>
+  <a href="">Contact</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>Read Here!</h2>
+    <p>There are a few different types of Dirt Bikes, but in those categories of there are loads of bikes to learn about. Ill cover these types of bikes on the other side of the page</p>
+  </div>
+  <div class="column middle">
+    <h2>Main Content</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  <div class="column side">
+    <h2>Basic Info</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+  
 </body>
 </html>
+
